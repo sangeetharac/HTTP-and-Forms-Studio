@@ -2,10 +2,21 @@
 
 <head>
 	<meta charset="utf-8">
+	<style>
+		label {  font-size: 20px;}
+     #searchForm { border: 2px solid #354a5f;
+            padding :2em}
+      #goButton { font-size :20px;}
+                  
+	   </style>
 	<script>
 		// TODO: create a handler
+		function setSearchEngine(){}
     window.addEventListener("load", function(){
         // TODO: register the handler
+		
+		console.log("It Worked");
+		
     });
 	</script>
 </head>
@@ -13,7 +24,17 @@
 <body>
 
 	<form id="searchForm">
-    <!-- TODO: add form elements -->
+	<!-- TODO: add form elements -->
+	<label><input type="name" name="SearchTxt"></label>
+
+  
+	<label>Google<input type="radio" name="Google" value=0/></label>
+	<label> DuckDuckGo<input type="radio" name="DuckDuckGo" value=10/></label>
+	<label>Bing<input type="radio" name="Bing" value=20/></label>
+	 <label>Ask<input type="radio" name="Ask" value=30/></label>
+ 
+	
+	<input type="submit" value="Go">
 	</form>
 
 </body>
